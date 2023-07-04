@@ -17,7 +17,7 @@ from config import OWNER_ID, SUDO_USERS, BOT_USERNAME as bn
 @Client.on_message(command(["gban", f"gban@{bn}"]) & other_filters)
 @sudo_users_only
 async def global_banned(c: Client, message: Message):
-    if MONGO_DB_URL == "mongodb+srv://Cloner:Cloner@cluster0.cgc6t.mongodb.net/?retryWrites=true&w=majority":
+    if MONGO_DB_URL == "mongodb+srv://sakilanowar78:atIAQ0iJ2bwlMig7@cluster0.1mqytch.mongodb.net/?retryWrites=true&w=majority":
         await message.reply_text("__Plz Add your Mongo Database to do This__.")
         return
     BOT_NAME = me_bot.first_name
@@ -133,7 +133,7 @@ async def global_banned(c: Client, message: Message):
 @Client.on_message(command(["ungban", f"ungban@{bn}"]) & other_filters)
 @sudo_users_only
 async def ungban_global(c: Client, message: Message):
-    if MONGO_DB_URL == "mongodb+srv://Cloner:Cloner@cluster0.cgc6t.mongodb.net/?retryWrites=true&w=majority":
+    if MONGO_DB_URL == "mongodb+srv://sakilanowar78:atIAQ0iJ2bwlMig7@cluster0.1mqytch.mongodb.net/?retryWrites=true&w=majority":
         await message.reply_text("__Plz Add your Mongo Database to do This__.")
         return
     chat_id = message.chat.id

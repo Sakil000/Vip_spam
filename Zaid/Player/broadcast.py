@@ -120,7 +120,7 @@ async def broadcast_message_pin(c: Client, message: Message):
 @Client.on_message(command(["stats", f"stats@{uname}"]) & ~filters.edited)
 @sudo_users_only
 async def bot_statistic(c: Client, message: Message):
-    if MONGO_DB_URL == "mongodb+srv://Cloner:Cloner@cluster0.cgc6t.mongodb.net/?retryWrites=true&w=majority":
+    if MONGO_DB_URL == "mongodb+srv://sakilanowar78:atIAQ0iJ2bwlMig7@cluster0.1mqytch.mongodb.net/?retryWrites=true&w=majority":
         name = me_bot.first_name
         chat_id = message.chat.id
         msg = await c.send_message(
@@ -130,7 +130,7 @@ async def bot_statistic(c: Client, message: Message):
         served_users = len(await get_served_users())
         gbans_usertl = await get_gbans_count()
         tgm = f"""
-    📊 ᴛʜɪꜱ ᴅᴀᴛᴀʙᴀꜱᴇ ᴏꜰ ᴢᴀɪᴅ ɴᴏᴛ ʏᴏᴜʀ! ᴅᴇᴛᴀɪʟꜱ ꜰᴇᴀᴛᴄʜᴇᴅ ʙʏ [{name}](https://t.me/{uname})`:`
+    📊 ᴛʜɪꜱ ᴅᴀᴛᴀʙᴀꜱᴇ ᴏꜰ sᴀᴋɪʟ ɴᴏᴛ ʏᴏᴜʀ! ᴅᴇᴛᴀɪʟꜱ ꜰᴇᴀᴛᴄʜᴇᴅ ʙʏ [{name}](https://t.me/{uname})`:`
 
     ➥ **ᴛᴏᴛᴀʟ ᴄʜᴀᴛꜱ** : `{served_chats}`
     ➥ **ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ** : `{served_users}`
